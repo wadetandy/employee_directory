@@ -45,7 +45,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'graphiti', '1.0.beta.8'
 gem 'kaminari', '~> 1.0'
 gem 'responders', '~> 2.4'
+gem 'graphql'
+
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails', '~> 3.5.2'
   gem 'factory_bot_rails', '~> 4.0'
   gem 'faker', '~> 1.7'

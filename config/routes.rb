@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     resources :employees
     # your routes go here
   end
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  post "/api/graphql", to: "graphql#execute"
+  get "/api/graphql_schema", to: "graphql#show_schema"
 end
